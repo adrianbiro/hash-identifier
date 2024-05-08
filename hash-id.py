@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # encoding: utf-8
 # Hash Identifier
 # By Zion3R
@@ -6,18 +6,18 @@
 # Root@Blackploit.com
 
 from builtins import input
-from sys import argv, exit
+from sys import argv
 
-version = 1.2
+VERSION = 1.3
 
-logo='''   #########################################################################
+LOGO = f'''   #########################################################################
    #     __  __                     __           ______    _____           #
    #    /\ \/\ \                   /\ \         /\__  _\  /\  _ `\         #
    #    \ \ \_\ \     __      ____ \ \ \___     \/_/\ \/  \ \ \/\ \        #
    #     \ \  _  \  /'__`\   / ,__\ \ \  _ `\      \ \ \   \ \ \ \ \       #
    #      \ \ \ \ \/\ \_\ \_/\__, `\ \ \ \ \ \      \_\ \__ \ \ \_\ \      #
    #       \ \_\ \_\ \___ \_\/\____/  \ \_\ \_\     /\_____\ \ \____/      #
-   #        \/_/\/_/\/__/\/_/\/___/    \/_/\/_/     \/_____/  \/___/  v'''+str(version)+''' #
+   #        \/_/\/_/\/__/\/_/\/___/    \/_/\/_/     \/_____/  \/___/  v{VERSION} #
    #                                                             By Zion3R #
    #                                                    www.Blackploit.com #
    #                                                   Root@Blackploit.com #
@@ -552,7 +552,7 @@ def WhirlpoolHMAC(hash):
         jerar.append("122080")
 
 
-print(logo)
+print(LOGO)
 try:
     first = str(argv[1])
 except:
